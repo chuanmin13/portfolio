@@ -104,10 +104,11 @@ body,
 
 .contact {
     background-color: #ff716c;
-    padding: 5px 10px;
-    border-radius: 10px;
+    /* padding: 2px 8px; */
+    border-radius: 5px;
     transition: 0.3s;
 }
+
 .contact a {
     color: #fff;
 }
@@ -146,6 +147,70 @@ body,
     /* animation: appearSlowly 1s 4.5s linear forwards; */
 }
 
+
+.title-wrap {
+    width: 100%;
+    height: 500px;
+    background: url("./imgs/ctheworld.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.header-img-wrap {
+    width: 100%;
+    /* position: relative;
+    left: -200px; */
+}
+
+.header-img {
+    height: 560px;
+    background: url("./imgs/ps-main.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+    .title-wrap, .header-img-wrap {
+        height: 200px;
+    }
+
+    .header-img-wrap {
+        height: 380px;
+    }
+
+    .about-bg {
+        background-color: #fff;
+    }
+}
+
+.title {
+    padding-left: 30px;
+    padding-bottom: 10%;
+}
+
+.title p {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Oldenburg", cursive;
+}
+
+.title h1 {
+    font-size: 58px;
+    font-family: "Paytone One", sans-serif;
+}
+
+.title h4 {
+    font-size: 30px;
+    font-family: "Play", sans-serif;
+    position: relative;
+    left: 40px;
+}
+
+
 .main-title p {
     position: absolute;
     top: 0;
@@ -155,7 +220,6 @@ body,
     font-family: "Oldenburg", cursive;
     z-index: 3;
 }
-
 .main-title h1 {
     position: absolute;
     top: 38px;
@@ -163,7 +227,6 @@ body,
     font-size: 58px;
     font-family: "Paytone One", sans-serif;
 }
-
 .main-title h4 {
     position: absolute;
     top: 113px;
@@ -174,10 +237,30 @@ body,
 .seperateLine {
     width: 120px;
     border-bottom: 2px solid #555;
-    position: absolute;
+    margin-left: 5px;
+    /* position: absolute;
     top: 135px;
-    left: 250px;
+    left: 250px; */
+    position: relative;
+    left: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+    .title {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .title p {
+        font-size: 18px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title h4 {
+        font-size: 20px;
+    }
+}
+
 
 .under-hello {
     width: 80px;
@@ -211,11 +294,26 @@ body,
 p.quote {
     font-family: "Corinthia", cursive;
     font-size: 75px;
-    position: absolute;
-    bottom: 0;
-    transform: rotate(-10deg) translate(-13%, 30%);
+    /* position: absolute;
+    bottom: 0; */
+    /* transform: rotate(-10deg) translate(-13%, 30%); */
+    transform: rotate(6deg) translate(-8%, 60%);
     white-space: nowrap;
     color: #fac5b3;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        position: relative;
+        width: 100%;
+    }
+    p.quote {
+        font-size: 22px;
+        transform: rotate(10deg) translate(0, 0);
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
 }
 
 .cm-logo {
@@ -269,7 +367,7 @@ p.quote {
 
 .section-container {
     margin: 0 10%;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     max-width: 1200px;
 }
 
@@ -304,7 +402,18 @@ p.quote {
     transition: 0.3s;
 }
 .skill-img:hover .s-img {
-    transform: translateY(-10px);
+    transform: translateY(-4px);
+}
+
+@media only screen and (max-width: 768px) {
+    .skill-img .s-img {
+        padding: 15px 10px;
+        width: 90%;
+    }
+
+    .skill-img figcaption {
+        font-size: 12px;
+    }
 }
 
 .skills-bg-left {
@@ -396,18 +505,30 @@ div.work-hash {
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .work-card {
+        padding-bottom: 0;
+    }
+
+    .work-wrap {
+        flex-direction: column;
+    }
+}
+
 .place-imgs {
     height: fit-content;
 }
 
 .contact-bg {
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
+    height: 300px;
     background: url("./imgs/yellow-bt.png") center bottom/contain no-repeat;
     position: relative;
 }
 .contact-wrap {
-    padding: 50px;
+    padding: 10px 20px;
 }
 .contact-title {
     line-height: 0.8rem;
