@@ -521,14 +521,15 @@ div.work-hash {
 }
 
 .contact-bg {
-    width: 100%;
-    /* height: 650px; */
     height: 300px;
-    background: url("./imgs/yellow-bt.png") center bottom/contain no-repeat;
+    background: url("./imgs/yellow-bt.png") center top/cover no-repeat;
     position: relative;
 }
-.contact-wrap {
+/* .contact-wrap {
     padding: 10px 20px;
+} */
+.contact-wrap {
+    padding: 10px 60px;
 }
 .contact-title {
     line-height: 0.8rem;
@@ -546,8 +547,8 @@ footer {
     width: 100%;
     background-color: #16609c;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 footer p {
